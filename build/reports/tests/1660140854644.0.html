@@ -1,0 +1,574 @@
+<html class="no-js ib" lang=""><head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IBanking</title>
+    <!-- Use minimum-scale=1 to enable GPU rasterization -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1">
+
+    <style type="text/css">svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.225em;
+}
+.svg-inline--fa.fa-w-1 {
+  width: 0.0625em;
+}
+.svg-inline--fa.fa-w-2 {
+  width: 0.125em;
+}
+.svg-inline--fa.fa-w-3 {
+  width: 0.1875em;
+}
+.svg-inline--fa.fa-w-4 {
+  width: 0.25em;
+}
+.svg-inline--fa.fa-w-5 {
+  width: 0.3125em;
+}
+.svg-inline--fa.fa-w-6 {
+  width: 0.375em;
+}
+.svg-inline--fa.fa-w-7 {
+  width: 0.4375em;
+}
+.svg-inline--fa.fa-w-8 {
+  width: 0.5em;
+}
+.svg-inline--fa.fa-w-9 {
+  width: 0.5625em;
+}
+.svg-inline--fa.fa-w-10 {
+  width: 0.625em;
+}
+.svg-inline--fa.fa-w-11 {
+  width: 0.6875em;
+}
+.svg-inline--fa.fa-w-12 {
+  width: 0.75em;
+}
+.svg-inline--fa.fa-w-13 {
+  width: 0.8125em;
+}
+.svg-inline--fa.fa-w-14 {
+  width: 0.875em;
+}
+.svg-inline--fa.fa-w-15 {
+  width: 0.9375em;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+.svg-inline--fa.fa-w-17 {
+  width: 1.0625em;
+}
+.svg-inline--fa.fa-w-18 {
+  width: 1.125em;
+}
+.svg-inline--fa.fa-w-19 {
+  width: 1.1875em;
+}
+.svg-inline--fa.fa-w-20 {
+  width: 1.25em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-border {
+  height: 1.5em;
+}
+.svg-inline--fa.fa-li {
+  width: 2em;
+}
+.svg-inline--fa.fa-fw {
+  width: 1.25em;
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: #ff253a;
+  border-radius: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  height: 1.5em;
+  line-height: 1;
+  max-width: 5em;
+  min-width: 1.5em;
+  overflow: hidden;
+  padding: 0.25em;
+  right: 0;
+  text-overflow: ellipsis;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: 0;
+  right: 0;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: 0;
+  left: 0;
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: 0;
+  right: auto;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-lg {
+  font-size: 1.3333333333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit;
+}
+
+.fa-border {
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
+}
+
+.fa-pull-left {
+  float: left;
+}
+
+.fa-pull-right {
+  float: right;
+}
+
+.fa.fa-pull-left,
+.fas.fa-pull-left,
+.far.fa-pull-left,
+.fal.fa-pull-left,
+.fab.fa-pull-left {
+  margin-right: 0.3em;
+}
+.fa.fa-pull-right,
+.fas.fa-pull-right,
+.far.fa-pull-right,
+.fal.fa-pull-right,
+.fab.fa-pull-right {
+  margin-left: 0.3em;
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical,
+:root .fa-flip-both {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: #fff;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse {
+  color: #fff;
+}</style><link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+<style>
+    #app {
+        height: 100%;
+    }
+
+    #loader-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+    }
+    #loader {
+        display: block;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 150px;
+        height: 150px;
+        margin: -75px 0 0 -75px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #3498db;
+        -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+        animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    }
+
+    #loader:before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #e74c3c;
+        -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+        animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    }
+
+    #loader:after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #f9c922;
+        -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+        animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    }
+
+    @-webkit-keyframes spin {
+        0%   {
+            -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(0deg);  /* IE 9 */
+            transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+        100% {
+            -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(360deg);  /* IE 9 */
+            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+    }
+    @keyframes spin {
+        0%   {
+            -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(0deg);  /* IE 9 */
+            transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+        100% {
+            -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(360deg);  /* IE 9 */
+            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+    }
+</style>
+<link href="/customer/748b756047d7f9b2fe8e.styles.css" rel="stylesheet"><script src="https://matomo.forte.kz/plugins/HeatmapSessionRecording/configs.php?idsite=31&amp;trackerid=vPfikV&amp;url=https%3A%2F%2Fcustomer-qa.anthill.fortebank.com%2Fcustomer%2Flogin" async="" defer=""></script></head>
+
+<body>
+    <div id="app"><div data-reactroot=""><!-- react-text: 205 --><!-- /react-text --><header class="top"><div class="top-bg"><div class="container top-wrapper"><div class="top-logo" style="cursor: pointer;"><a><img src="/src/customer/design/img/170fb0b73ab9346de0848def310f9ca6.png"></a></div><div class="top-user-block collect-in"><div class="top-user-item"><div class="top-user-name hidden-xs">Кезбаев Битим</div><div class="top-user-company"><div><div class="custom-select top-company-select"><div class="custom-selected top-company-selected">ТОО КЕЗБИ</div><div class="custom-options top-company-options"><div class="custom-options-item top-company-options-item">ИП КЕЗБАЕВ БИТИМ</div><div class="custom-options-item top-company-options-item">ТОО КЕЗБИ</div></div></div><!-- react-empty: 222 --></div></div></div></div><div class="top-manager-block collect-in"><div class="top-manager-wrapper"><a class="top-manager-icon"></a></div></div><div class="top-search-block collect-in hidden-xs"><div class="top-search"><input type="text" class="top-search-input" placeholder="Поиск" value=""><div class="top-search-tip"><!-- react-text: 227 -->Номер документа<!-- /react-text --><!-- react-text: 228 -->, <!-- /react-text --><!-- react-text: 229 -->Назначение<!-- /react-text --><!-- react-text: 230 -->, <!-- /react-text --><!-- react-text: 231 -->Аккаунт<!-- /react-text --><!-- react-text: 232 -->,<!-- /react-text --><!-- react-text: 233 --> <!-- /react-text --><!-- react-text: 234 -->Имя шаблона<!-- /react-text --><!-- react-text: 235 -->,<!-- /react-text --><!-- react-text: 236 -->Получатель<!-- /react-text --><!-- react-text: 237 -->, <!-- /react-text --><!-- react-text: 238 -->БИН/ИИН<!-- /react-text --></div><!-- react-text: 239 --><!-- /react-text --><button class="top-search-button"></button></div></div><div class="top-ctrl"><div><!-- react-empty: 243 --><!-- react-empty: 244 --><div></div></div><div class="top-ctrl-notify top-ctrl-item c-popup"><a class="top-ctrl-notify-link" style="cursor: pointer;"><span class="top-ctrl-notify-counter"></span></a></div><div class="top-ctrl-options top-ctrl-item"><a class="top-ctrl-options-link" style="cursor: pointer;"></a></div><div class="top-ctrl-logout top-ctrl-item"><a class="top-ctrl-logout-link"><span>Выход</span></a></div></div></div><div class="top-navbar-wrapper hidden-xs"><div class="container"><nav class="top-navbar"><ul class="top-menu"><li class="top-menu-item"><a href="/customer/">Главная</a><ul class="top-submenu-list"></ul></li><li class="top-menu-item"><a><img src="/customer/b1fa6e47e2fb364e6ed26bbbf672993b.svg" width="30px" height="30px"></a><ul class="top-submenu-list"><li class="top-submenu-item"><a href="/customer/accounts">Текущие счета</a></li><li class="top-submenu-item"><a href="/customer/deposits">Депозиты</a></li><li class="top-submenu-item"><a href="/customer/exchange-control">Валютный контроль</a></li><li class="top-submenu-item"><a href="/customer/cards">Корпоративные карты</a></li><li class="top-submenu-item"><a href="/customer/credits">Кредиты / Овердрафты</a></li><li class="top-submenu-item"><a href="/customer/guarantees">Гарантии / Аккредитивы</a></li></ul></li><li class="top-menu-item"><a><img src="/customer/98c9762f8b484168baa7d82e88ad5e63.svg" width="30px" height="30px"></a><ul class="top-submenu-list"><li class="top-submenu-item"><a href="/customer/fortex">ForteX</a></li><li class="top-submenu-item"><a href="/customer/applications">Заявления</a></li><li class="top-submenu-item"><a href="/customer/domestic-transfers">Переводы в тенге</a></li><li class="top-submenu-item"><a href="/customer/international-transfers">Переводы в валюте</a></li><li class="top-submenu-item"><a href="/customer/internal-transfers">Переводы между счетами</a></li><li class="top-submenu-item"><a href="/customer/p2p-transfers">Перевод между картами</a></li></ul></li><li class="top-menu-item"><a><img src="/customer/8d9a409ecf8b9028984bced93082e532.svg" width="30px" height="30px"></a><ul class="top-submenu-list"><li class="top-submenu-item"><a href="/customer/working-documents">Документы в работе</a></li><li class="top-submenu-item"><a href="/customer/exposed-order">Счета на оплату</a></li><li class="top-submenu-item"><a href="/customer/returns">Возвраты</a></li><li class="top-submenu-item"><a href="/customer/document-withdraws">Отзывы платежей</a></li><li class="top-submenu-item"><a href="/customer/account-transfers">Конвертация</a></li><li class="top-submenu-item"><a href="/customer/accounts-statement">Выписки</a></li><li class="top-submenu-item"><a href="/customer/references">Справки</a></li></ul></li><li class="top-menu-item"><a><img src="/customer/4158bc5a0605b66c54fb1bd1f7a02f08.svg" width="30px" height="30px"></a><ul class="top-submenu-list"><li class="top-submenu-item"><a href="/customer/personal-page">Личный кабинет</a></li><li class="top-submenu-item"><a href="/customer/letter">Почта</a></li><li class="top-submenu-item"><a href="/customer/news">Новости</a></li><li class="top-submenu-item"><a href="/customer/handbooks">Справочники</a></li><li class="top-submenu-item"><a href="">Онлайн-чат</a></li><li class="top-submenu-item"><a href="/customer/standing-orders">Регулярные переводы</a></li></ul></li><div class="top-current-time"><!-- react-text: 328 -->20:14<!-- /react-text --><br><!-- react-text: 330 -->10 августа 2022 г.<!-- /react-text --></div></ul></nav></div></div></div></header><div class="breadrumbs"></div><div class="content-with-sidebar"><div class="container container-flex"><section class="main-content"><section class="main-section"><header class="main-section-header"><h2 class="main-section-title main-section-left">Текущие счета</h2><div class="main-section-right"><a class="btn btn-primary btn-add">Открыть доп.счет</a></div></header><div class="accounts-tabs-content tab-item-cont active"><div><div class="main-section-content"><div class="c-bills-wrapper c-half" style="width: 47.9%;"><div class="c-bills-panel"><div class="c-bills-label" style="display: flex; font-weight: bold; max-width: 85%;"><span class="card-title">Товарищество с ограниченной ответственностью "КЕЗБИ"</span><a class="c-edit" href="#" style="text-overflow: ellipsis; margin: 0px;"><span>Изменить</span></a></div><div class="c-popup c-account-popup"><div class="c-popup-target c-account-act"><ul class="c-account-act-list"><li class="c-account-act-item c-account-act-info"><a><i></i><span>Просмотр деталей</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>Отправка реквизитов</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>Платеж со счета</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>Платеж со счета со списком</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>Перевод между счетами</span></a></li><li class="c-account-act-item c-account-act-exchange"><a><i></i><span>Конвертация валюты</span></a></li><li class="c-account-act-item c-account-act-order"><a><i></i><span>Выписка</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>История операций</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>Выставление счета на оплату</span></a></li><li class="c-account-act-item c-account-act-close"><a><i></i><span>Закрыть счёт</span></a></li></ul></div></div></div><div class="c-bills-top"><div class="c-bills-dot"></div><div class="c-bills-id-wrapper"><div class="c-bills-id flag-item flag-item-kz">KZ8696511F0007962519</div><div class="c-bills-type">Тенге</div></div><div class="c-bills-status c-status c-status-active">Открытый</div></div><div class="c-bills-city"><div class="c-bills-city-key"><!-- react-text: 1605 -->Филиал<!-- /react-text --><!-- react-text: 1606 -->:<!-- /react-text --></div><div class="c-bills-city-value">Филиал АО "ForteBank" г. Актау</div></div><div class="c-bills-ft" style="padding: 19px;"><div class="c-bills-key"><!-- react-text: 1610 -->Остаток<!-- /react-text --><!-- react-text: 1611 -->:<!-- /react-text --></div><div class="c-bills-summ c-summ c-summ"><!-- react-text: 1613 -->1 004 026 855,17<!-- /react-text --><span class="c-curr c-curr-kzt"></span></div></div></div><div class="c-bills-wrapper c-half" style="width: 47.9%;"><div class="c-bills-panel"><div class="c-bills-label" style="display: flex; font-weight: bold; max-width: 85%;"><span class="card-title">Товарищество с ограниченной ответственностью "КЕЗБИ"</span><a class="c-edit" href="#" style="text-overflow: ellipsis; margin: 0px;"><span>Изменить</span></a></div><div class="c-popup c-account-popup"><div class="c-popup-target c-account-act"><ul class="c-account-act-list"><li class="c-account-act-item c-account-act-info"><a><i></i><span>Просмотр деталей</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>Отправка реквизитов</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>Перевод между счетами</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>Переводы в валюте</span></a></li><li class="c-account-act-item c-account-act-exchange"><a><i></i><span>Конвертация валюты</span></a></li><li class="c-account-act-item c-account-act-order"><a><i></i><span>Выписка</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>История операций</span></a></li><li class="c-account-act-item c-account-act-close"><a><i></i><span>Закрыть счёт</span></a></li></ul></div></div></div><div class="c-bills-top"><div class="c-bills-dot"></div><div class="c-bills-id-wrapper"><div class="c-bills-id flag-item flag-item-us">KZ5896511F0007964381</div><div class="c-bills-type">Доллар США</div></div><div class="c-bills-status c-status c-status-active">Открытый</div></div><div class="c-bills-city"><div class="c-bills-city-key"><!-- react-text: 1664 -->Филиал<!-- /react-text --><!-- react-text: 1665 -->:<!-- /react-text --></div><div class="c-bills-city-value">Филиал АО "ForteBank" г. Актау</div></div><div class="c-bills-ft" style="padding: 19px;"><div class="c-bills-key"><!-- react-text: 1669 -->Остаток<!-- /react-text --><!-- react-text: 1670 -->:<!-- /react-text --></div><div class="c-bills-summ c-summ c-summ"><!-- react-text: 1672 -->0,00<!-- /react-text --><span class="c-curr c-curr-us"></span></div></div></div><div class="c-bills-wrapper c-half" style="width: 47.9%;"><div class="c-bills-panel"><div class="c-bills-label" style="display: flex; font-weight: bold; max-width: 85%;"><span class="card-title">Товарищество с ограниченной ответственностью "КЕЗБИ"</span><a class="c-edit" href="#" style="text-overflow: ellipsis; margin: 0px;"><span>Изменить</span></a></div><div class="c-popup c-account-popup"><div class="c-popup-target c-account-act"><ul class="c-account-act-list"><li class="c-account-act-item c-account-act-info"><a><i></i><span>Просмотр деталей</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>Отправка реквизитов</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>Перевод между счетами</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>Переводы в валюте</span></a></li><li class="c-account-act-item c-account-act-exchange"><a><i></i><span>Конвертация валюты</span></a></li><li class="c-account-act-item c-account-act-order"><a><i></i><span>Выписка</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>История операций</span></a></li><li class="c-account-act-item c-account-act-close"><a><i></i><span>Закрыть счёт</span></a></li></ul></div></div></div><div class="c-bills-top"><div class="c-bills-dot"></div><div class="c-bills-id-wrapper"><div class="c-bills-id flag-item flag-item-ru">KZ7496511F0007964384</div><div class="c-bills-type">Российский рубль</div></div><div class="c-bills-status c-status c-status-active">Открытый</div></div><div class="c-bills-city"><div class="c-bills-city-key"><!-- react-text: 1723 -->Филиал<!-- /react-text --><!-- react-text: 1724 -->:<!-- /react-text --></div><div class="c-bills-city-value">Филиал АО "ForteBank" г. Актау</div></div><div class="c-bills-ft" style="padding: 19px;"><div class="c-bills-key"><!-- react-text: 1728 -->Остаток<!-- /react-text --><!-- react-text: 1729 -->:<!-- /react-text --></div><div class="c-bills-summ c-summ c-summ"><!-- react-text: 1731 -->0,00<!-- /react-text --><span class="c-curr c-curr-ru"></span></div></div></div><div class="c-bills-wrapper c-half" style="width: 47.9%;"><div class="c-bills-panel"><div class="c-bills-label" style="display: flex; font-weight: bold; max-width: 85%;"><span class="card-title">Текущий</span><a class="c-edit" href="#" style="text-overflow: ellipsis; margin: 0px;"><span>Изменить</span></a></div><div class="c-popup c-account-popup"><div class="c-popup-target c-account-act"><ul class="c-account-act-list"><li class="c-account-act-item c-account-act-info"><a><i></i><span>Просмотр деталей</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>Отправка реквизитов</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>Перевод между счетами</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>Переводы в валюте</span></a></li><li class="c-account-act-item c-account-act-exchange"><a><i></i><span>Конвертация валюты</span></a></li><li class="c-account-act-item c-account-act-order"><a><i></i><span>Выписка</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>История операций</span></a></li><li class="c-account-act-item c-account-act-close"><a><i></i><span>Закрыть счёт</span></a></li></ul></div></div></div><div class="c-bills-top"><div class="c-bills-dot"></div><div class="c-bills-id-wrapper"><div class="c-bills-id flag-item flag-item-eu">KZ5896511F0008145868</div><div class="c-bills-type">Евро</div></div><div class="c-bills-status c-status c-status-active">Открытый</div></div><div class="c-bills-city"><div class="c-bills-city-key"><!-- react-text: 1782 -->Филиал<!-- /react-text --><!-- react-text: 1783 -->:<!-- /react-text --></div><div class="c-bills-city-value">Филиал АО "ForteBank" г. Актау</div></div><div class="c-bills-ft" style="padding: 19px;"><div class="c-bills-key"><!-- react-text: 1787 -->Остаток<!-- /react-text --><!-- react-text: 1788 -->:<!-- /react-text --></div><div class="c-bills-summ c-summ c-summ"><!-- react-text: 1790 -->0,00<!-- /react-text --><span class="c-curr c-curr-eu"></span></div></div></div></div></div></div><footer class="main-section-footer"><div class="main-section-left"><a class="btn btn-primary" href="/customer/accounts">Показать все</a></div></footer></section><section class="main-section"><header class="main-section-header"><h2 class="main-section-title main-section-left">Депозиты</h2><div class="main-section-right"><a class="btn btn-primary-outline">Депозитный калькулятор</a><a class="btn btn-primary btn-add">Открыть депозит</a></div></header><div class="accounts-tabs-content tab-item-cont active"><div><div class="main-section-content"></div></div></div><footer class="main-section-footer"></footer></section><section class="main-section"><header class="main-section-header"><h2 class="main-section-title main-section-left">Кредиты</h2><div class="main-section-right"><a class="btn btn-primary btn-add">Добавить</a></div></header><div class="accounts-tabs-content tab-item-cont active"><div><div class="main-section-content"><div class="c-bills-wrapper c-half" style="width: 47.9%;"><div class="c-bills-panel"><div class="c-bills-label" style="display: flex; font-weight: bold; max-width: 85%;"><span class="card-title">Линия</span><a class="c-edit" href="#" style="text-overflow: ellipsis; margin: 0px;"><span>Изменить</span></a></div><div class="c-popup c-account-popup"><div class="c-popup-target c-account-act"><ul class="c-account-act-list"><li class="c-account-act-item c-account-act-info"><a><i></i><span>Просмотр деталей</span></a></li><li class="c-account-act-item c-account-act-pay"><a><i></i><span>Транши</span></a></li></ul></div></div></div><div class="c-credit-top"><div class="c-bills-dot"></div><div class="c-bills-id-wrapper"><div class="c-bills-id flag-item flag-item-kz">О-11-2-2021</div><div class="c-bills-type">Тенге</div></div><div class="c-bills-status c-status c-status-active">Работает</div></div><div class="c-credit-content"><div class="c-credit-cell c-credit-cell-left"><div class="c-credit-rate"><!-- react-text: 832 -->Номинальная ставка вознаграждения<!-- /react-text --><!-- react-text: 833 -->:<!-- /react-text --><span style="margin-left: 10px;"></span></div></div><div class="c-credit-cell c-credit-cell-right"></div><div class="c-credit-cell c-credit-cell-left"><div class="c-credit-date"><!-- react-text: 838 -->Дата окончания<!-- /react-text --><!-- react-text: 839 -->:<!-- /react-text --><span>12.04.2023</span></div></div><div class="c-credit-cell c-credit-cell-right"><div class="c-credit-balance"><div class="c-credit-balance-label"><!-- react-text: 844 -->Текущий остаток<!-- /react-text --><!-- react-text: 845 -->:<!-- /react-text --></div><div class="c-credit-balance-summ c-summ"><!-- react-text: 847 -->0,00<!-- /react-text --><span class="c-curr c-curr-kzt"></span></div></div></div></div></div><div class="c-bills-wrapper c-half" style="width: 47.9%;"><div class="c-bills-panel"><div class="c-bills-label" style="display: flex; font-weight: bold; max-width: 85%;"><span class="card-title">Транш</span><a class="c-edit" href="#" style="text-overflow: ellipsis; margin: 0px;"><span>Изменить</span></a></div><div class="c-popup c-account-popup"><div class="c-popup-target c-account-act"><ul class="c-account-act-list"><li class="c-account-act-item c-account-act-info"><a><i></i><span>Просмотр деталей</span></a></li></ul></div></div></div><div class="c-credit-top"><div class="c-bills-dot"></div><div class="c-bills-id-wrapper"><div class="c-bills-id flag-item flag-item-kz">M-11-88-2020/18</div><div class="c-bills-type">Тенге</div></div><div class="c-bills-status c-status c-status-active">Работает</div></div><div class="c-credit-content"><div class="c-credit-cell c-credit-cell-left"><div class="c-credit-rate"><!-- react-text: 871 -->Номинальная ставка вознаграждения<!-- /react-text --><!-- react-text: 872 -->:<!-- /react-text --><span style="margin-left: 10px;">14.5%</span></div></div><div class="c-credit-cell c-credit-cell-right"></div><div class="c-credit-cell c-credit-cell-left"><div class="c-credit-date"><!-- react-text: 877 -->Дата окончания<!-- /react-text --><!-- react-text: 878 -->:<!-- /react-text --><span>05.08.2022</span></div></div><div class="c-credit-cell c-credit-cell-right"><div class="c-credit-balance"><div class="c-credit-balance-label"><!-- react-text: 883 -->Текущий остаток<!-- /react-text --><!-- react-text: 884 -->:<!-- /react-text --></div><div class="c-credit-balance-summ c-summ"><!-- react-text: 886 -->0,00<!-- /react-text --><span class="c-curr c-curr-kzt"></span></div></div></div></div></div><div class="c-bills-wrapper c-half" style="width: 47.9%;"><div class="c-bills-panel"><div class="c-bills-label" style="display: flex; font-weight: bold; max-width: 85%;"><span class="card-title">Транш</span><a class="c-edit" href="#" style="text-overflow: ellipsis; margin: 0px;"><span>Изменить</span></a></div><div class="c-popup c-account-popup"><div class="c-popup-target c-account-act"><ul class="c-account-act-list"><li class="c-account-act-item c-account-act-info"><a><i></i><span>Просмотр деталей</span></a></li></ul></div></div></div><div class="c-credit-top"><div class="c-bills-dot"></div><div class="c-bills-id-wrapper"><div class="c-bills-id flag-item flag-item-kz">M-11-88-2020/19</div><div class="c-bills-type">Тенге</div></div><div class="c-bills-status c-status c-status-active">Работает</div></div><div class="c-credit-content"><div class="c-credit-cell c-credit-cell-left"><div class="c-credit-rate"><!-- react-text: 910 -->Номинальная ставка вознаграждения<!-- /react-text --><!-- react-text: 911 -->:<!-- /react-text --><span style="margin-left: 10px;">14.5%</span></div></div><div class="c-credit-cell c-credit-cell-right"><div class="c-credit-amount"><div class="c-credit-amount-label"><!-- react-text: 916 -->Предстоящий платеж<!-- /react-text --><!-- react-text: 917 -->:<!-- /react-text --></div><div class="c-credit-amount-summ"><span><!-- react-text: 920 -->08.08.2022<!-- /react-text --><!-- react-text: 921 --> - <!-- /react-text --><!-- react-text: 922 -->4 525 375,00<!-- /react-text --></span><span class="c-curr c-curr-kzt"></span></div></div></div><div class="c-credit-cell c-credit-cell-left"><div class="c-credit-date"><!-- react-text: 926 -->Дата окончания<!-- /react-text --><!-- react-text: 927 -->:<!-- /react-text --><span>08.08.2022</span></div></div><div class="c-credit-cell c-credit-cell-right"><div class="c-credit-balance"><div class="c-credit-balance-label"><!-- react-text: 932 -->Текущий остаток<!-- /react-text --><!-- react-text: 933 -->:<!-- /react-text --></div><div class="c-credit-balance-summ c-summ"><!-- react-text: 935 -->4 500 000,00<!-- /react-text --><span class="c-curr c-curr-kzt"></span></div></div></div></div></div><div class="c-bills-wrapper c-half" style="width: 47.9%;"><div class="c-bills-panel"><div class="c-bills-label" style="display: flex; font-weight: bold; max-width: 85%;"><span class="card-title">Транш</span><a class="c-edit" href="#" style="text-overflow: ellipsis; margin: 0px;"><span>Изменить</span></a></div><div class="c-popup c-account-popup"><div class="c-popup-target c-account-act"><ul class="c-account-act-list"><li class="c-account-act-item c-account-act-info"><a><i></i><span>Просмотр деталей</span></a></li></ul></div></div></div><div class="c-credit-top"><div class="c-bills-dot"></div><div class="c-bills-id-wrapper"><div class="c-bills-id flag-item flag-item-kz">M-11-88-2020/29</div><div class="c-bills-type">Тенге</div></div><div class="c-bills-status c-status c-status-active">Работает</div></div><div class="c-credit-content"><div class="c-credit-cell c-credit-cell-left"><div class="c-credit-rate"><!-- react-text: 959 -->Номинальная ставка вознаграждения<!-- /react-text --><!-- react-text: 960 -->:<!-- /react-text --><span style="margin-left: 10px;">14.5%</span></div></div><div class="c-credit-cell c-credit-cell-right"><div class="c-credit-amount"><div class="c-credit-amount-label"><!-- react-text: 965 -->Предстоящий платеж<!-- /react-text --><!-- react-text: 966 -->:<!-- /react-text --></div><div class="c-credit-amount-summ"><span><!-- react-text: 969 -->22.08.2022<!-- /react-text --><!-- react-text: 970 --> - <!-- /react-text --><!-- react-text: 971 -->5 703 240,74<!-- /react-text --></span><span class="c-curr c-curr-kzt"></span></div></div></div><div class="c-credit-cell c-credit-cell-left"><div class="c-credit-date"><!-- react-text: 975 -->Дата окончания<!-- /react-text --><!-- react-text: 976 -->:<!-- /react-text --><span>09.09.2022</span></div></div><div class="c-credit-cell c-credit-cell-right"><div class="c-credit-balance"><div class="c-credit-balance-label"><!-- react-text: 981 -->Текущий остаток<!-- /react-text --><!-- react-text: 982 -->:<!-- /react-text --></div><div class="c-credit-balance-summ c-summ"><!-- react-text: 984 -->11 111 111,08<!-- /react-text --><span class="c-curr c-curr-kzt"></span></div></div></div></div></div></div></div></div><footer class="main-section-footer"><div class="main-section-left"><a class="btn btn-primary" href="/customer/credits">Показать все</a></div></footer></section><section class="main-section"><header class="main-section-header"><h2 class="main-section-title main-section-left">Гарантии / Аккредитивы</h2></header><div class="accounts-tabs-content tab-item-cont active"><div><div class="main-section-content"><div class="c-bills-wrapper c-half" style="width: 47.9%;"><div class="c-bills-panel"><div class="c-bills-label" style="display: flex; font-weight: bold; max-width: 85%;"><span class="card-title">Внутренняя непокрытая гарантия</span><a class="c-edit" href="#" style="text-overflow: ellipsis; margin: 0px;"><span>Изменить</span></a></div><div class="c-popup c-account-popup"><div class="c-popup-target c-account-act"><ul class="c-account-act-list"><li class="c-account-act-item c-account-act-info"><a><i></i><span>Просмотр деталей</span></a></li></ul></div></div></div><div class="c-credit-top"><div class="c-bills-dot"></div><div class="c-bills-id-wrapper"><div class="c-bills-id flag-item flag-item-kz" title="GМ-11-24-2021/1">GМ-11-24-2021/1</div></div><div class="c-bills-status c-status c-status-active">Работает</div></div><div class="c-credit-content"><div class="c-credit-cell c-credit-cell-left"><div class="c-credit-date"><!-- react-text: 631 -->Дата выпуска<!-- /react-text --><!-- react-text: 632 -->:<!-- /react-text --><span>30.03.2021</span></div></div><div class="c-credit-cell c-credit-cell-right"><div class="c-credit-balance"><div class="c-credit-balance-label"><!-- react-text: 637 -->Сумма<!-- /react-text --><!-- react-text: 638 -->:<!-- /react-text --></div><div class="c-credit-balance-summ c-summ"><!-- react-text: 640 -->161 688 526,27<!-- /react-text --><span class="c-curr c-curr-kzt"></span></div></div></div></div></div><div class="c-bills-wrapper c-half" style="width: 47.9%;"><div class="c-bills-panel"><div class="c-bills-label" style="display: flex; font-weight: bold; max-width: 85%;"><span class="card-title">Внутренняя непокрытая гарантия</span><a class="c-edit" href="#" style="text-overflow: ellipsis; margin: 0px;"><span>Изменить</span></a></div><div class="c-popup c-account-popup"><div class="c-popup-target c-account-act"><ul class="c-account-act-list"><li class="c-account-act-item c-account-act-info"><a><i></i><span>Просмотр деталей</span></a></li></ul></div></div></div><div class="c-credit-top"><div class="c-bills-dot"></div><div class="c-bills-id-wrapper"><div class="c-bills-id flag-item flag-item-kz" title="GМ-11-24-2021/2">GМ-11-24-2021/2</div></div><div class="c-bills-status c-status c-status-active">Работает</div></div><div class="c-credit-content"><div class="c-credit-cell c-credit-cell-left"><div class="c-credit-date"><!-- react-text: 663 -->Дата выпуска<!-- /react-text --><!-- react-text: 664 -->:<!-- /react-text --><span>30.03.2021</span></div></div><div class="c-credit-cell c-credit-cell-right"><div class="c-credit-balance"><div class="c-credit-balance-label"><!-- react-text: 669 -->Сумма<!-- /react-text --><!-- react-text: 670 -->:<!-- /react-text --></div><div class="c-credit-balance-summ c-summ"><!-- react-text: 672 -->26 116 609,68<!-- /react-text --><span class="c-curr c-curr-kzt"></span></div></div></div></div></div><div class="c-bills-wrapper c-half" style="width: 47.9%;"><div class="c-bills-panel"><div class="c-bills-label" style="display: flex; font-weight: bold; max-width: 85%;"><span class="card-title">Внутренняя непокрытая гарантия</span><a class="c-edit" href="#" style="text-overflow: ellipsis; margin: 0px;"><span>Изменить</span></a></div><div class="c-popup c-account-popup"><div class="c-popup-target c-account-act"><ul class="c-account-act-list"><li class="c-account-act-item c-account-act-info"><a><i></i><span>Просмотр деталей</span></a></li></ul></div></div></div><div class="c-credit-top"><div class="c-bills-dot"></div><div class="c-bills-id-wrapper"><div class="c-bills-id flag-item flag-item-kz" title="GМ-11-24-2021/3">GМ-11-24-2021/3</div></div><div class="c-bills-status c-status c-status-active">Работает</div></div><div class="c-credit-content"><div class="c-credit-cell c-credit-cell-left"><div class="c-credit-date"><!-- react-text: 695 -->Дата выпуска<!-- /react-text --><!-- react-text: 696 -->:<!-- /react-text --><span>29.06.2021</span></div></div><div class="c-credit-cell c-credit-cell-right"><div class="c-credit-balance"><div class="c-credit-balance-label"><!-- react-text: 701 -->Сумма<!-- /react-text --><!-- react-text: 702 -->:<!-- /react-text --></div><div class="c-credit-balance-summ c-summ"><!-- react-text: 704 -->4 409 458,39<!-- /react-text --><span class="c-curr c-curr-kzt"></span></div></div></div></div></div><div class="c-bills-wrapper c-half" style="width: 47.9%;"><div class="c-bills-panel"><div class="c-bills-label" style="display: flex; font-weight: bold; max-width: 85%;"><span class="card-title">Внутренняя непокрытая гарантия</span><a class="c-edit" href="#" style="text-overflow: ellipsis; margin: 0px;"><span>Изменить</span></a></div><div class="c-popup c-account-popup"><div class="c-popup-target c-account-act"><ul class="c-account-act-list"><li class="c-account-act-item c-account-act-info"><a><i></i><span>Просмотр деталей</span></a></li></ul></div></div></div><div class="c-credit-top"><div class="c-bills-dot"></div><div class="c-bills-id-wrapper"><div class="c-bills-id flag-item flag-item-kz" title="GM-11-88-2020/13">GM-11-88-2020/13</div></div><div class="c-bills-status c-status c-status-active">Работает</div></div><div class="c-credit-content"><div class="c-credit-cell c-credit-cell-left"><div class="c-credit-date"><!-- react-text: 727 -->Дата выпуска<!-- /react-text --><!-- react-text: 728 -->:<!-- /react-text --><span>01.09.2021</span></div></div><div class="c-credit-cell c-credit-cell-right"><div class="c-credit-balance"><div class="c-credit-balance-label"><!-- react-text: 733 -->Сумма<!-- /react-text --><!-- react-text: 734 -->:<!-- /react-text --></div><div class="c-credit-balance-summ c-summ"><!-- react-text: 736 -->8 316 000,00<!-- /react-text --><span class="c-curr c-curr-kzt"></span></div></div></div></div></div></div></div></div><footer class="main-section-footer"><div class="main-section-left"><a class="btn btn-primary" href="/customer/guarantees">Показать все</a></div></footer></section><section class="main-section"><header class="main-section-header"><h2 class="main-section-title main-section-left">Карты</h2><div class="main-section-right"><a class="btn btn-primary btn-add">Заказать карту</a></div></header><div class="accounts-tabs-content tab-item-cont active"><div><div class="main-section-content"><div class="c-bills-wrapper c-half" style="width: 47.9%;"><div class="c-bills-panel"><div class="c-bills-label" style="display: flex; font-weight: bold; max-width: 85%;"><span class="card-title">BITIM KEZBAYEV</span><a class="c-edit" href="#" style="text-overflow: ellipsis; margin: 0px;"><span>Изменить</span></a></div><div class="c-popup c-account-popup"><div class="c-popup-target c-account-act"><ul class="c-account-act-list"><li class="c-account-act-item c-account-act-info"><a><i></i><span>Просмотр деталей</span></a></li><li class="c-account-act-item c-account-act-order"><a><i></i><span>Выписка</span></a></li><li class="c-account-act-item c-account-act-pay"><a><i></i><span>Детали заблокированой суммы</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>Отправка реквизитов</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>История операций</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>Перевыпуск карты</span></a></li><li class="c-account-act-item c-account-act-block"><a><i></i><span>Смена ПИН-кода</span></a></li><li class="c-account-act-item c-account-act-block"><a><i></i><span>Заблокировать карту</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>Лимиты карты</span></a></li></ul></div></div></div><div class="c-credit-top" style="border-bottom: 1px solid rgb(213, 213, 213);"><div class="c-bills-dot"></div><div class="c-bills-id-wrapper"><div class="c-bills-id flag-item flag-item-kz">KZ4896511F0008288153</div><div class="c-bills-type">KZT</div></div><div class="c-bills-status c-status c-status-opened">Открыт</div></div><div class="c-card-content"><div class="c-card-balance"><div class="c-card-balance-label"><!-- react-text: 1312 -->Доступно<!-- /react-text --><!-- react-text: 1313 -->:<!-- /react-text --></div><div class="c-card-balance-value"><div class="c-summ c-card-summ"><!-- react-text: 1316 -->0,00<!-- /react-text --><span class="c-curr c-curr-kzt"></span></div></div></div><div class="c-card-lock"><div class="c-card-lock-label"><!-- react-text: 1320 -->Сумма в блоке<!-- /react-text --><!-- react-text: 1321 -->:<!-- /react-text --></div><div class="c-card-lock-value"><!-- react-text: 1323 -->0,00<!-- /react-text --><span class="c-curr c-curr-kzt"></span></div></div></div><div class="c-card-ft"><div class="c-card-id">547752XXXXXX5095</div><div class="c-card-validity"><!-- react-text: 1328 -->Срок действия<!-- /react-text --><!-- react-text: 1329 -->: <!-- /react-text --><!-- react-text: 1330 -->22.02.2025<!-- /react-text --></div><div class="c-card-type c-card-type-master"></div></div></div><div class="c-bills-wrapper c-half" style="width: 47.9%;"><div class="c-bills-panel"><div class="c-bills-label" style="display: flex; font-weight: bold; max-width: 85%;"><span class="card-title">ZANGAR BATYRKHAN</span><a class="c-edit" href="#" style="text-overflow: ellipsis; margin: 0px;"><span>Изменить</span></a></div><div class="c-popup c-account-popup"><div class="c-popup-target c-account-act"><ul class="c-account-act-list"><li class="c-account-act-item c-account-act-info"><a><i></i><span>Просмотр деталей</span></a></li><li class="c-account-act-item c-account-act-order"><a><i></i><span>Выписка</span></a></li><li class="c-account-act-item c-account-act-pay"><a><i></i><span>Детали заблокированой суммы</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>Отправка реквизитов</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>История операций</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>Перевыпуск карты</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>Лимиты карты</span></a></li></ul></div></div></div><div class="c-credit-top" style="border-bottom: 1px solid rgb(213, 213, 213);"><div class="c-bills-dot"></div><div class="c-bills-id-wrapper"><div class="c-bills-id flag-item flag-item-kz">KZ8796511F0008315775</div><div class="c-bills-type">KZT</div></div><div class="c-bills-status c-status c-status-opened">Открыт</div></div><div class="c-card-content"><div class="c-card-balance"><div class="c-card-balance-label"><!-- react-text: 1378 -->Доступно<!-- /react-text --><!-- react-text: 1379 -->:<!-- /react-text --></div><div class="c-card-balance-value"><div class="c-summ c-card-summ"><!-- react-text: 1382 -->0,00<!-- /react-text --><span class="c-curr c-curr-kzt"></span></div></div></div><div class="c-card-lock"><div class="c-card-lock-label"><!-- react-text: 1386 -->Сумма в блоке<!-- /react-text --><!-- react-text: 1387 -->:<!-- /react-text --></div><div class="c-card-lock-value"><!-- react-text: 1389 -->0,00<!-- /react-text --><span class="c-curr c-curr-kzt"></span></div></div></div><div class="c-card-ft"><div class="c-card-id">547752XXXXXX5947</div><div class="c-card-validity"><!-- react-text: 1394 -->Срок действия<!-- /react-text --><!-- react-text: 1395 -->: <!-- /react-text --><!-- react-text: 1396 -->22.02.2025<!-- /react-text --></div><div class="c-card-type c-card-type-master"></div></div></div><div class="c-bills-wrapper c-half" style="width: 47.9%;"><div class="c-bills-panel"><div class="c-bills-label" style="display: flex; font-weight: bold; max-width: 85%;"><span class="card-title">BITIM KEZBAYEV</span><a class="c-edit" href="#" style="text-overflow: ellipsis; margin: 0px;"><span>Изменить</span></a></div><div class="c-popup c-account-popup"><div class="c-popup-target c-account-act"><ul class="c-account-act-list"><li class="c-account-act-item c-account-act-info"><a><i></i><span>Просмотр деталей</span></a></li><li class="c-account-act-item c-account-act-order"><a><i></i><span>Выписка</span></a></li><li class="c-account-act-item c-account-act-pay"><a><i></i><span>Детали заблокированой суммы</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>Отправка реквизитов</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>История операций</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>Перевыпуск карты</span></a></li><li class="c-account-act-item c-account-act-block"><a><i></i><span>Смена ПИН-кода</span></a></li><li class="c-account-act-item c-account-act-block"><a><i></i><span>Заблокировать карту</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>Лимиты карты</span></a></li></ul></div></div></div><div class="c-credit-top" style="border-bottom: 1px solid rgb(213, 213, 213);"><div class="c-bills-dot"></div><div class="c-bills-id-wrapper"><div class="c-bills-id flag-item flag-item-kz">KZ9096511F0008288173</div><div class="c-bills-type">KZT</div></div><div class="c-bills-status c-status c-status-opened">Открыт</div></div><div class="c-card-content"><div class="c-card-balance"><div class="c-card-balance-label"><!-- react-text: 1452 -->Доступно<!-- /react-text --><!-- react-text: 1453 -->:<!-- /react-text --></div><div class="c-card-balance-value"><div class="c-summ c-card-summ"><!-- react-text: 1456 -->0,00<!-- /react-text --><span class="c-curr c-curr-kzt"></span></div></div></div><div class="c-card-lock"><div class="c-card-lock-label"><!-- react-text: 1460 -->Сумма в блоке<!-- /react-text --><!-- react-text: 1461 -->:<!-- /react-text --></div><div class="c-card-lock-value"><!-- react-text: 1463 -->0,00<!-- /react-text --><span class="c-curr c-curr-kzt"></span></div></div></div><div class="c-card-ft"><div class="c-card-id">404245XXXXXX7090</div><div class="c-card-validity"><!-- react-text: 1468 -->Срок действия<!-- /react-text --><!-- react-text: 1469 -->: <!-- /react-text --><!-- react-text: 1470 -->22.02.2025<!-- /react-text --></div><div class="c-card-type c-card-type-visa"></div></div></div><div class="c-bills-wrapper c-half" style="width: 47.9%;"><div class="c-bills-panel"><div class="c-bills-label" style="display: flex; font-weight: bold; max-width: 85%;"><span class="card-title">BITIM KEZBAYEV</span><a class="c-edit" href="#" style="text-overflow: ellipsis; margin: 0px;"><span>Изменить</span></a></div><div class="c-popup c-account-popup"><div class="c-popup-target c-account-act"><ul class="c-account-act-list"><li class="c-account-act-item c-account-act-info"><a><i></i><span>Просмотр деталей</span></a></li><li class="c-account-act-item c-account-act-order"><a><i></i><span>Выписка</span></a></li><li class="c-account-act-item c-account-act-pay"><a><i></i><span>Детали заблокированой суммы</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>Отправка реквизитов</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>История операций</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>Перевыпуск карты</span></a></li><li class="c-account-act-item c-account-act-block"><a><i></i><span>Смена ПИН-кода</span></a></li><li class="c-account-act-item c-account-act-block"><a><i></i><span>Заблокировать карту</span></a></li><li class="c-account-act-item c-account-act-story"><a><i></i><span>Лимиты карты</span></a></li></ul></div></div></div><div class="c-credit-top" style="border-bottom: 1px solid rgb(213, 213, 213);"><div class="c-bills-dot"></div><div class="c-bills-id-wrapper"><div class="c-bills-id flag-item flag-item-kz">KZ8796511F0008315775</div><div class="c-bills-type">KZT</div></div><div class="c-bills-status c-status c-status-opened">Открыт</div></div><div class="c-card-content"><div class="c-card-balance"><div class="c-card-balance-label"><!-- react-text: 1526 -->Доступно<!-- /react-text --><!-- react-text: 1527 -->:<!-- /react-text --></div><div class="c-card-balance-value"><div class="c-summ c-card-summ"><!-- react-text: 1530 -->0,00<!-- /react-text --><span class="c-curr c-curr-kzt"></span></div></div></div><div class="c-card-lock"><div class="c-card-lock-label"><!-- react-text: 1534 -->Сумма в блоке<!-- /react-text --><!-- react-text: 1535 -->:<!-- /react-text --></div><div class="c-card-lock-value"><!-- react-text: 1537 -->0,00<!-- /react-text --><span class="c-curr c-curr-kzt"></span></div></div></div><div class="c-card-ft"><div class="c-card-id">547752XXXXXX0205</div><div class="c-card-validity"><!-- react-text: 1542 -->Срок действия<!-- /react-text --><!-- react-text: 1543 -->: <!-- /react-text --><!-- react-text: 1544 -->22.02.2025<!-- /react-text --></div><div class="c-card-type c-card-type-master"></div></div></div></div></div></div><footer class="main-section-footer"><div class="main-section-left"><a class="btn btn-primary" href="/customer/cards">Показать все</a></div></footer></section><section class="main-section"><header class="main-section-header"><h2 class="main-section-title main-section-left">Валютные договоры</h2><div class="main-section-right"><a class="btn btn-primary btn-add">Добавить</a></div></header><div class="accounts-tabs-content tab-item-cont active"><div class="main-section-content"><div class="c-bills-wrapper c-half" style="width: 47.9%;"><div class="c-bills-panel"><div class="c-bills-label" style="display: flex; font-weight: bold; max-width: 85%;"><span class="card-title">Контракт на импорт товаров без УНК на сумму до 50000 USD (с пересечением границы РК)</span><a class="c-edit" href="#" style="text-overflow: ellipsis; margin: 0px;"><span>Изменить</span></a></div><div class="c-popup c-account-popup"><div class="c-popup-target c-account-act"><ul class="c-account-act-list"><li class="c-account-act-item c-account-act-order"><a><i></i><span>Переводы в валюте</span></a></li><li class="c-account-act-item c-account-act-order"><a><i></i><span>Конвертация валюты</span></a></li><li class="c-account-act-item c-account-act-order"><a><i></i><span>История операций</span></a></li><li class="c-account-act-item c-account-act-order"><a><i></i><span>Просмотр деталей</span></a></li></ul></div></div></div><div class="c-credit-top"><div class="c-bills-dot"></div><div class="c-bills-id-wrapper"><div class="c-bills-id flag-item flag-item-ru">01/03/2020</div><div class="c-bills-type">02.03.2020</div></div><div class="c-bills-status c-status c-status-registered">Зарегистрирован</div></div><div class="c-credit-content"><div class="c-credit-cell c-credit-cell-left"><div class="c-credit-rate"><!-- react-text: 1022 -->УНК<!-- /react-text --><!-- react-text: 1023 -->:<!-- /react-text --><div class="text-overflow"></div></div></div><div class="c-credit-cell c-credit-cell-right"><div class="c-credit-rate"><!-- react-text: 1027 -->Дата учетного номера договора<!-- /react-text --><!-- react-text: 1028 -->:<!-- /react-text --><span style="margin-left: 10px;"></span></div></div><div class="c-credit-cell c-credit-cell-left"><div class="c-credit-date"><!-- react-text: 1032 -->Валюта контракта<!-- /react-text --><!-- react-text: 1033 -->:<!-- /react-text --><span>RUB</span></div></div><div class="c-credit-cell c-credit-cell-right"><div class="c-credit-balance"><div class="c-credit-balance-label"><!-- react-text: 1038 -->Сумма контракта<!-- /react-text --><!-- react-text: 1039 -->:<!-- /react-text --></div><div class="c-credit-balance-summ c-summ"><!-- react-text: 1041 -->2 500 000,00<!-- /react-text --><span class="c-curr c-curr-ru"></span></div></div></div></div></div><div class="c-bills-wrapper c-half" style="width: 47.9%;"><div class="c-bills-panel"><div class="c-bills-label" style="display: flex; font-weight: bold; max-width: 85%;"><span class="card-title">Контракт на импорт товаров без УНК на сумму до 50000 USD (с пересечением границы РК)</span><a class="c-edit" href="#" style="text-overflow: ellipsis; margin: 0px;"><span>Изменить</span></a></div><div class="c-popup c-account-popup"><div class="c-popup-target c-account-act"><ul class="c-account-act-list"><li class="c-account-act-item c-account-act-order"><a><i></i><span>Переводы в валюте</span></a></li><li class="c-account-act-item c-account-act-order"><a><i></i><span>Конвертация валюты</span></a></li><li class="c-account-act-item c-account-act-order"><a><i></i><span>История операций</span></a></li><li class="c-account-act-item c-account-act-order"><a><i></i><span>Просмотр деталей</span></a></li></ul></div></div></div><div class="c-credit-top"><div class="c-bills-dot"></div><div class="c-bills-id-wrapper"><div class="c-bills-id flag-item flag-item-ru">20/19</div><div class="c-bills-type">12.04.2019</div></div><div class="c-bills-status c-status c-status-registered">Зарегистрирован</div></div><div class="c-credit-content"><div class="c-credit-cell c-credit-cell-left"><div class="c-credit-rate"><!-- react-text: 1077 -->УНК<!-- /react-text --><!-- react-text: 1078 -->:<!-- /react-text --><div class="text-overflow"></div></div></div><div class="c-credit-cell c-credit-cell-right"><div class="c-credit-rate"><!-- react-text: 1082 -->Дата учетного номера договора<!-- /react-text --><!-- react-text: 1083 -->:<!-- /react-text --><span style="margin-left: 10px;"></span></div></div><div class="c-credit-cell c-credit-cell-left"><div class="c-credit-date"><!-- react-text: 1087 -->Валюта контракта<!-- /react-text --><!-- react-text: 1088 -->:<!-- /react-text --><span>RUB</span></div></div><div class="c-credit-cell c-credit-cell-right"><div class="c-credit-balance"><div class="c-credit-balance-label"><!-- react-text: 1093 -->Сумма контракта<!-- /react-text --><!-- react-text: 1094 -->:<!-- /react-text --></div><div class="c-credit-balance-summ c-summ"><!-- react-text: 1096 -->131 072,40<!-- /react-text --><span class="c-curr c-curr-ru"></span></div></div></div></div></div><div class="c-bills-wrapper c-half" style="width: 47.9%;"><div class="c-bills-panel"><div class="c-bills-label" style="display: flex; font-weight: bold; max-width: 85%;"><span class="card-title">Контракт с УНК по импорту</span><a class="c-edit" href="#" style="text-overflow: ellipsis; margin: 0px;"><span>Изменить</span></a></div><div class="c-popup c-account-popup"><div class="c-popup-target c-account-act"><ul class="c-account-act-list"><li class="c-account-act-item c-account-act-order"><a><i></i><span>Переводы в валюте</span></a></li><li class="c-account-act-item c-account-act-order"><a><i></i><span>Конвертация валюты</span></a></li><li class="c-account-act-item c-account-act-order"><a><i></i><span>История операций</span></a></li><li class="c-account-act-item c-account-act-order"><a><i></i><span>Просмотр деталей</span></a></li></ul></div></div></div><div class="c-credit-top"><div class="c-bills-dot"></div><div class="c-bills-id-wrapper"><div class="c-bills-id flag-item flag-item-ru">24/20-Э</div><div class="c-bills-type">06.04.2020</div></div><div class="c-bills-status c-status c-status-decorated">Оформлен УНК</div></div><div class="c-credit-content"><div class="c-credit-cell c-credit-cell-left"><div class="c-credit-rate"><!-- react-text: 1132 -->УНК<!-- /react-text --><!-- react-text: 1133 -->:<!-- /react-text --><div class="text-overflow">2/499/0902/26779</div></div></div><div class="c-credit-cell c-credit-cell-right"><div class="c-credit-rate"><!-- react-text: 1137 -->Дата учетного номера договора<!-- /react-text --><!-- react-text: 1138 -->:<!-- /react-text --><span style="margin-left: 10px;">21.04.2020</span></div></div><div class="c-credit-cell c-credit-cell-left"><div class="c-credit-date"><!-- react-text: 1142 -->Валюта контракта<!-- /react-text --><!-- react-text: 1143 -->:<!-- /react-text --><span>RUB</span></div></div><div class="c-credit-cell c-credit-cell-right"><div class="c-credit-balance"><div class="c-credit-balance-label"><!-- react-text: 1148 -->Сумма контракта<!-- /react-text --><!-- react-text: 1149 -->:<!-- /react-text --></div><div class="c-credit-balance-summ c-summ"><!-- react-text: 1151 -->4 000 000,00<!-- /react-text --><span class="c-curr c-curr-ru"></span></div></div></div></div></div><div class="c-bills-wrapper c-half" style="width: 47.9%;"><div class="c-bills-panel"><div class="c-bills-label" style="display: flex; font-weight: bold; max-width: 85%;"><span class="card-title">Контракт на импорт товаров без УНК на сумму до 50000 USD (с пересечением границы РК)</span><a class="c-edit" href="#" style="text-overflow: ellipsis; margin: 0px;"><span>Изменить</span></a></div><div class="c-popup c-account-popup"><div class="c-popup-target c-account-act"><ul class="c-account-act-list"><li class="c-account-act-item c-account-act-order"><a><i></i><span>Переводы в валюте</span></a></li><li class="c-account-act-item c-account-act-order"><a><i></i><span>Конвертация валюты</span></a></li><li class="c-account-act-item c-account-act-order"><a><i></i><span>История операций</span></a></li><li class="c-account-act-item c-account-act-order"><a><i></i><span>Просмотр деталей</span></a></li></ul></div></div></div><div class="c-credit-top"><div class="c-bills-dot"></div><div class="c-bills-id-wrapper"><div class="c-bills-id flag-item flag-item-ru">04/06/19-ДП-К</div><div class="c-bills-type">04.06.2019</div></div><div class="c-bills-status c-status c-status-registered">Зарегистрирован</div></div><div class="c-credit-content"><div class="c-credit-cell c-credit-cell-left"><div class="c-credit-rate"><!-- react-text: 1187 -->УНК<!-- /react-text --><!-- react-text: 1188 -->:<!-- /react-text --><div class="text-overflow"></div></div></div><div class="c-credit-cell c-credit-cell-right"><div class="c-credit-rate"><!-- react-text: 1192 -->Дата учетного номера договора<!-- /react-text --><!-- react-text: 1193 -->:<!-- /react-text --><span style="margin-left: 10px;"></span></div></div><div class="c-credit-cell c-credit-cell-left"><div class="c-credit-date"><!-- react-text: 1197 -->Валюта контракта<!-- /react-text --><!-- react-text: 1198 -->:<!-- /react-text --><span>RUB</span></div></div><div class="c-credit-cell c-credit-cell-right"><div class="c-credit-balance"><div class="c-credit-balance-label"><!-- react-text: 1203 -->Сумма контракта<!-- /react-text --><!-- react-text: 1204 -->:<!-- /react-text --></div><div class="c-credit-balance-summ c-summ"><!-- react-text: 1206 -->3 000 000,00<!-- /react-text --><span class="c-curr c-curr-ru"></span></div></div></div></div></div></div></div><footer class="main-section-footer"><div class="main-section-left"><a class="btn btn-primary" href="/customer/exchange-control/foreign-exchanges">Показать все</a></div></footer></section></section><aside class="main-sidebar"><div class="w-wrapper w-favourite"><div class="w-header w-header-hl c-popup-parent"><h3 class="w-title w-favourite-title">Избранное</h3><div class="c-popup doc-table-option-popup" style="z-index: unset;"><div class="poped-out-left c-popup-target doc-table-option"><ul class="doc-table-option-list"><li class="doc-table-option-item"><input type="checkbox" id="Выписка10" value="on"><label for="Выписка10"><i></i><span style="color: rgb(0, 0, 0);">Выписка</span></label></li><li class="doc-table-option-item"><input type="checkbox" id="Конвертация10" value="on"><label for="Конвертация10"><i></i><span style="color: rgb(0, 0, 0);">Конвертация</span></label></li><li class="doc-table-option-item"><input type="checkbox" id="Личный кабинет10" value="on"><label for="Личный кабинет10"><i></i><span style="color: rgb(0, 0, 0);">Личный кабинет</span></label></li><li class="doc-table-option-item"><input type="checkbox" id="Перевод между счетами10" value="on"><label for="Перевод между счетами10"><i></i><span style="color: rgb(0, 0, 0);">Перевод между счетами</span></label></li><li class="doc-table-option-item"><input type="checkbox" id="Переводы в валюте10" value="on"><label for="Переводы в валюте10"><i></i><span style="color: rgb(0, 0, 0);">Переводы в валюте</span></label></li><li class="doc-table-option-item"><input type="checkbox" id="Переводы в тенге10" value="on"><label for="Переводы в тенге10"><i></i><span style="color: rgb(0, 0, 0);">Переводы в тенге</span></label></li><li class="doc-table-option-item"><input type="checkbox" id="Почта10" value="on"><label for="Почта10"><i></i><span style="color: rgb(0, 0, 0);">Почта</span></label></li><li class="doc-table-option-item"><input type="checkbox" id="Проверка контрагентов10" value="on"><label for="Проверка контрагентов10"><i></i><span style="color: rgb(0, 0, 0);">Проверка контрагентов</span></label></li><li class="doc-table-option-item"><input type="checkbox" id="Справки10" value="on"><label for="Справки10"><i></i><span style="color: rgb(0, 0, 0);">Справки</span></label></li></ul></div></div></div><div class="w-content w-favourite-block"><ul class="w-favourite-list"><li class="w-favourite-list-item"><a href="#" class="right-line">Выписка</a></li><li class="w-favourite-list-item"><a href="#" class="right-line">Конвертация</a></li><li class="w-favourite-list-item"><a href="#" class="right-line">Личный кабинет</a></li><li class="w-favourite-list-item"><a href="#" class="right-line">Перевод между счетами</a></li><li class="w-favourite-list-item"><a href="#" class="right-line">Переводы в валюте</a></li><li class="w-favourite-list-item"><a href="#" class="right-line">Переводы в тенге</a></li><li class="w-favourite-list-item"><a href="#" class="right-line">Почта</a></li><li class="w-favourite-list-item"><a href="#" class="right-line">Проверка контрагентов</a></li><li class="w-favourite-list-item"><a href="#" class="right-line">Справки</a></li></ul></div></div><div class="w-wrapper w-tasks"><div class="w-header"><h3 class="w-title w-tasks-title">Задачи</h3></div><div class="w-content w-tasks-block" style="cursor: pointer;"><ul class="w-tasks-list"><li class="w-tasks-list-item"><a>Ожидающие подписи</a><span class="w-tasks-list-item-count">4</span></li></ul></div></div><div class="w-wrapper w-curr"><div class="w-header"><h3 class="w-title w-curr-title">Курс валют</h3></div><div class="w-content w-curr-block"><div class="w-curr-table"><div class="w-curr-table-header w-curr-table-row"><div class="w-curr-table-cell w-curr-table-cell-empty"></div><div class="w-curr-table-cell">Покупка:</div><div class="w-curr-table-cell">Продажа:</div></div><div class="w-curr-table-row"><div class="w-curr-table-cell w-curr-table-flag w-curr-table-flag-us">USD</div><div class="w-curr-table-cell w-curr-table-cell-digit">473</div><div class="w-curr-table-cell w-curr-table-cell-digit">481</div></div><div class="w-curr-table-row"><div class="w-curr-table-cell w-curr-table-flag w-curr-table-flag-eu">EUR</div><div class="w-curr-table-cell w-curr-table-cell-digit">481.97</div><div class="w-curr-table-cell w-curr-table-cell-digit">493.97</div></div><div class="w-curr-table-row"><div class="w-curr-table-cell w-curr-table-flag w-curr-table-flag-gb">GBP</div><div class="w-curr-table-cell w-curr-table-cell-digit">572.08</div><div class="w-curr-table-cell w-curr-table-cell-digit">586.08</div></div><div class="w-curr-table-row"><div class="w-curr-table-cell w-curr-table-flag w-curr-table-flag-ru">RUB</div><div class="w-curr-table-cell w-curr-table-cell-digit">7.41</div><div class="w-curr-table-cell w-curr-table-cell-digit">8.31</div></div></div><div style="margin-top: 10px; text-align: center;"><span>Обновлено: 20:14:09</span></div></div></div><div class="w-wrapper w-calc"><div class="w-header"><h3 class="w-title w-calc-title">Калькулятор валюты</h3></div><div class="w-content w-calc-block"><div class="w-calc-sell"><div class="w-calc-label">Продаю</div><div class="w-calc-row"><div class="custom-select w-calc-select"><div class="custom-selected w-calc-selected"><div class="w-calc-item w-calc-item-kzt">KZT</div></div><div class="custom-options w-calc-options"><div class="custom-options-item w-calc-options-item"><div class="w-calc-item w-calc-item-kzt"><span style="font-size: 0.8em;">KZT</span></div></div><div class="custom-options-item w-calc-options-item"><div class="w-calc-item w-calc-item-eur"><span style="font-size: 0.8em;">EUR</span></div></div><div class="custom-options-item w-calc-options-item"><div class="w-calc-item w-calc-item-gbp"><span style="font-size: 0.8em;">GBP</span></div></div><div class="custom-options-item w-calc-options-item"><div class="w-calc-item w-calc-item-rub"><span style="font-size: 0.8em;">RUB</span></div></div><div class="custom-options-item w-calc-options-item"><div class="w-calc-item w-calc-item-usd"><span style="font-size: 0.8em;">USD</span></div></div></div></div><div class="w-calc-input"><input type="text" class="w-calc-input-item" value=""></div></div></div><div class="w-calc-switch"><div class="w-calc-switch-btn"></div></div><div class="w-calc-buy"><div class="w-calc-label">Покупаю</div><div class="w-calc-row"><div class="custom-select w-calc-select"><div class="custom-selected w-calc-selected"><div class="w-calc-item w-calc-item-kzt">KZT</div></div><div class="custom-options w-calc-options"><div class="custom-options-item w-calc-options-item"><div class="w-calc-item w-calc-item-kzt"><span style="font-size: 0.8em;">KZT</span></div></div><div class="custom-options-item w-calc-options-item"><div class="w-calc-item w-calc-item-eur"><span style="font-size: 0.8em;">EUR</span></div></div><div class="custom-options-item w-calc-options-item"><div class="w-calc-item w-calc-item-gbp"><span style="font-size: 0.8em;">GBP</span></div></div><div class="custom-options-item w-calc-options-item"><div class="w-calc-item w-calc-item-rub"><span style="font-size: 0.8em;">RUB</span></div></div><div class="custom-options-item w-calc-options-item"><div class="w-calc-item w-calc-item-usd"><span style="font-size: 0.8em;">USD</span></div></div></div></div><div class="w-calc-input"><input type="text" class="w-calc-input-item" value=""></div></div></div><div class="w-calc-tip"><span style="color: transparent;">Результат</span></div><div class="w-calc-btns"><button class="w-btn btn-calc btn-calc-hl">Конвертация</button><button class="w-btn btn-calc">Сбросить</button></div></div></div></aside></div></div><footer class="ft"><div class="container"><div class="ft-flex"><div class="ft-menu"><h3 class="ft-menu-title">Информация о банке</h3><ul class="ft-menu-list"><li class="ft-menu-list-item"><a href="https://forte.bank/about/" target="_blank">Информация о банке</a></li><li class="ft-menu-list-item"><a href="https://forte.bank/about/" target="_blank">Реквизиты банка</a></li><li class="ft-menu-list-item"><a href="https://forte.bank/about/?documents=Y" target="_blank">Лицензии и решения</a></li><li class="ft-menu-list-item"><a href="https://forte.bank/about/?reporting=Y" target="_blank">Отчетность</a></li><li class="ft-menu-list-item"><a style="cursor: pointer;">Отделения</a></li></ul></div><div class="ft-menu"><h3 class="ft-menu-title">Пресс-центр</h3><ul class="ft-menu-list"><li class="ft-menu-list-item"><a href="https://forte.kz/news" target="_blank" style="cursor: pointer;">Новости</a></li><li class="ft-menu-list-item"><a id="userManualLink" href="https://business.forte.kz/static/e9d06bb38dcdb030abcf12a5105ec172/8265b93dd8be28b0abcd316891d10031.pdf" target="_blank" style="cursor: pointer;">Руководство пользователя</a></li><li class="ft-menu-list-item"><a id="registrationRulesLink" href="https://business.forte.kz/static/62eac54f7d14ebaf9d6ad72f994e64c0/b2bbb7cb7ce9e36d58bf2a55b6510d8b.pdf" target="_blank" style="cursor: pointer;">Правила регистрации</a></li></ul></div><div><div class="ft-download"><h5 class="ft-download-title">Установите приложение ForteBusiness</h5><div class="ft-download-app"><div class="ft-btn-download-app"><a href="https://apps.apple.com/kz/app/fortebusiness/id1586252009"><img src="/customer/458806ce77a36fa5d92fc52bd59a425a.svg" alt="appstore-icon" style="margin-right: 5px;"><!-- react-text: 484 -->App Store<!-- /react-text --></a></div><div class="ft-btn-download-app" style="margin-left: 20px;"><a href="https://play.google.com/store/apps/details?id=kz.forte.business"><img src="/customer/bd1c0242aae58c6af9b2b6807d4f07c8.svg" alt="googleplay-icon" style="margin-right: 5px;"><!-- react-text: 488 -->Google Play<!-- /react-text --></a></div></div><div class="ft-copy"><!-- react-text: 490 -->Forte Bank<!-- /react-text --><!-- react-text: 491 --> <!-- /react-text --><br><!-- react-text: 493 -->Все права защищены<!-- /react-text --></div></div></div></div></div><div class="mobile-button" id="mobile-button"><div class="icon-bar"></div><div class="icon-bar"></div><div class="icon-bar"></div></div><div id="mobile-menu" class=""><div class="mobile-menu-inner"><div class="top-user-block collect-in"><div class="top-user-item"><div class="top-user-name hidden-xs">Кезбаев Битим</div><div class="top-user-company"><div><div class="custom-select top-company-select"><div class="custom-selected top-company-selected">ТОО КЕЗБИ</div><div class="custom-options top-company-options"><div class="custom-options-item top-company-options-item">ИП КЕЗБАЕВ БИТИМ</div><div class="custom-options-item top-company-options-item">ТОО КЕЗБИ</div></div></div><!-- react-empty: 510 --></div></div></div></div><div class="top-search-block collect-in hidden-xs"><div class="top-search"><input type="text" class="top-search-input" placeholder="Поиск" value=""><div class="top-search-tip"><!-- react-text: 515 -->Номер документа<!-- /react-text --><!-- react-text: 516 -->, <!-- /react-text --><!-- react-text: 517 -->Назначение<!-- /react-text --><!-- react-text: 518 -->, <!-- /react-text --><!-- react-text: 519 -->Аккаунт<!-- /react-text --><!-- react-text: 520 -->,<!-- /react-text --><!-- react-text: 521 --> <!-- /react-text --><!-- react-text: 522 -->Имя шаблона<!-- /react-text --><!-- react-text: 523 -->,<!-- /react-text --><!-- react-text: 524 -->Получатель<!-- /react-text --><!-- react-text: 525 -->, <!-- /react-text --><!-- react-text: 526 -->БИН/ИИН<!-- /react-text --></div><!-- react-text: 527 --><!-- /react-text --><button class="top-search-button"></button></div></div><nav class="top-navbar"><ul class="top-menu"><li class="top-menu-item"><a href="/customer/">Главная</a><ul class="top-submenu-list"></ul></li><li class="top-menu-item"><a><img src="/customer/b1fa6e47e2fb364e6ed26bbbf672993b.svg" width="30px" height="30px"></a><ul class="top-submenu-list"><li class="top-submenu-item"><a href="/customer/accounts">Текущие счета</a></li><li class="top-submenu-item"><a href="/customer/deposits">Депозиты</a></li><li class="top-submenu-item"><a href="/customer/exchange-control">Валютный контроль</a></li><li class="top-submenu-item"><a href="/customer/cards">Корпоративные карты</a></li><li class="top-submenu-item"><a href="/customer/credits">Кредиты / Овердрафты</a></li><li class="top-submenu-item"><a href="/customer/guarantees">Гарантии / Аккредитивы</a></li></ul></li><li class="top-menu-item"><a><img src="/customer/98c9762f8b484168baa7d82e88ad5e63.svg" width="30px" height="30px"></a><ul class="top-submenu-list"><li class="top-submenu-item"><a href="/customer/fortex">ForteX</a></li><li class="top-submenu-item"><a href="/customer/applications">Заявления</a></li><li class="top-submenu-item"><a href="/customer/domestic-transfers">Переводы в тенге</a></li><li class="top-submenu-item"><a href="/customer/international-transfers">Переводы в валюте</a></li><li class="top-submenu-item"><a href="/customer/internal-transfers">Переводы между счетами</a></li><li class="top-submenu-item"><a href="/customer/p2p-transfers">Перевод между картами</a></li></ul></li><li class="top-menu-item"><a><img src="/customer/8d9a409ecf8b9028984bced93082e532.svg" width="30px" height="30px"></a><ul class="top-submenu-list"><li class="top-submenu-item"><a href="/customer/working-documents">Документы в работе</a></li><li class="top-submenu-item"><a href="/customer/exposed-order">Счета на оплату</a></li><li class="top-submenu-item"><a href="/customer/returns">Возвраты</a></li><li class="top-submenu-item"><a href="/customer/document-withdraws">Отзывы платежей</a></li><li class="top-submenu-item"><a href="/customer/account-transfers">Конвертация</a></li><li class="top-submenu-item"><a href="/customer/accounts-statement">Выписки</a></li><li class="top-submenu-item"><a href="/customer/references">Справки</a></li></ul></li><li class="top-menu-item"><a><img src="/customer/4158bc5a0605b66c54fb1bd1f7a02f08.svg" width="30px" height="30px"></a><ul class="top-submenu-list"><li class="top-submenu-item"><a href="/customer/personal-page">Личный кабинет</a></li><li class="top-submenu-item"><a href="/customer/letter">Почта</a></li><li class="top-submenu-item"><a href="/customer/news">Новости</a></li><li class="top-submenu-item"><a href="/customer/handbooks">Справочники</a></li><li class="top-submenu-item"><a href="">Онлайн-чат</a></li><li class="top-submenu-item"><a href="/customer/standing-orders">Регулярные переводы</a></li></ul></li><div class="top-current-time"><!-- react-text: 601 -->20:14<!-- /react-text --><br><!-- react-text: 603 -->10 августа 2022 г.<!-- /react-text --></div></ul></nav><div></div></div></div><div class="mobile-menu-overlay"></div></footer><!-- react-empty: 606 --></div></div>
+
+    <script type="text/javascript" src="/dll/vendor.dll.js"></script>
+
+    <!-- Matomo -->
+    <script type="text/javascript">
+        var _paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+        var u="https://matomo.forte.kz/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '31']);
+        
+        })();
+    </script>
+    <script type="text/javascript" src="//matomo.forte.kz/matomo.js"></script>
+    <!-- End Matomo Code -->
+<script type="text/javascript" src="/customer/748b756047d7f9b2fe8e.bundle.js"></script>
+
+
+<style>
+      button::-moz-focus-inner,
+      input::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+      }
+    </style><div><div data-reactroot="" style="position: fixed; box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); z-index: 1500; top: 0px; left: -10000px; width: 100%; height: 100%; transition: left 0ms cubic-bezier(0.23, 1, 0.32, 1) 450ms;"><div></div><div style="position: fixed; height: 100%; width: 100%; top: 0px; left: -100%; opacity: 0; background-color: rgba(0, 0, 0, 0.54); -webkit-tap-highlight-color: rgba(0, 0, 0, 0); will-change: opacity; transform: translateZ(0px); transition: left 0ms cubic-bezier(0.23, 1, 0.32, 1) 400ms, opacity 400ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; z-index: 1400;"><!-- react-empty: 4 --></div></div></div><div><div data-reactroot="" style="position: fixed; box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); z-index: 1500; top: 0px; left: -10000px; width: 100%; height: 100%; transition: left 0ms cubic-bezier(0.23, 1, 0.32, 1) 450ms;"><div></div><div style="position: fixed; height: 100%; width: 100%; top: 0px; left: -100%; opacity: 0; background-color: rgba(0, 0, 0, 0.54); -webkit-tap-highlight-color: rgba(0, 0, 0, 0); will-change: opacity; transform: translateZ(0px); transition: left 0ms cubic-bezier(0.23, 1, 0.32, 1) 400ms, opacity 400ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; z-index: 1400;"><!-- react-empty: 4 --></div></div></div><div><div data-reactroot="" style="position: fixed; box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); z-index: 1500; top: 0px; left: -10000px; width: 100%; height: 100%; transition: left 0ms cubic-bezier(0.23, 1, 0.32, 1) 450ms;"><div></div><div style="position: fixed; height: 100%; width: 100%; top: 0px; left: -100%; opacity: 0; background-color: rgba(0, 0, 0, 0.54); -webkit-tap-highlight-color: rgba(0, 0, 0, 0); will-change: opacity; transform: translateZ(0px); transition: left 0ms cubic-bezier(0.23, 1, 0.32, 1) 400ms, opacity 400ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; z-index: 1400;"><!-- react-empty: 4 --></div></div></div></body></html>

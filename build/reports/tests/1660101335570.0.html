@@ -1,0 +1,574 @@
+<html class="no-js ib" lang=""><head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IBanking</title>
+    <!-- Use minimum-scale=1 to enable GPU rasterization -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1">
+
+    <style type="text/css">svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.225em;
+}
+.svg-inline--fa.fa-w-1 {
+  width: 0.0625em;
+}
+.svg-inline--fa.fa-w-2 {
+  width: 0.125em;
+}
+.svg-inline--fa.fa-w-3 {
+  width: 0.1875em;
+}
+.svg-inline--fa.fa-w-4 {
+  width: 0.25em;
+}
+.svg-inline--fa.fa-w-5 {
+  width: 0.3125em;
+}
+.svg-inline--fa.fa-w-6 {
+  width: 0.375em;
+}
+.svg-inline--fa.fa-w-7 {
+  width: 0.4375em;
+}
+.svg-inline--fa.fa-w-8 {
+  width: 0.5em;
+}
+.svg-inline--fa.fa-w-9 {
+  width: 0.5625em;
+}
+.svg-inline--fa.fa-w-10 {
+  width: 0.625em;
+}
+.svg-inline--fa.fa-w-11 {
+  width: 0.6875em;
+}
+.svg-inline--fa.fa-w-12 {
+  width: 0.75em;
+}
+.svg-inline--fa.fa-w-13 {
+  width: 0.8125em;
+}
+.svg-inline--fa.fa-w-14 {
+  width: 0.875em;
+}
+.svg-inline--fa.fa-w-15 {
+  width: 0.9375em;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+.svg-inline--fa.fa-w-17 {
+  width: 1.0625em;
+}
+.svg-inline--fa.fa-w-18 {
+  width: 1.125em;
+}
+.svg-inline--fa.fa-w-19 {
+  width: 1.1875em;
+}
+.svg-inline--fa.fa-w-20 {
+  width: 1.25em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-border {
+  height: 1.5em;
+}
+.svg-inline--fa.fa-li {
+  width: 2em;
+}
+.svg-inline--fa.fa-fw {
+  width: 1.25em;
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: #ff253a;
+  border-radius: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  height: 1.5em;
+  line-height: 1;
+  max-width: 5em;
+  min-width: 1.5em;
+  overflow: hidden;
+  padding: 0.25em;
+  right: 0;
+  text-overflow: ellipsis;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: 0;
+  right: 0;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: 0;
+  left: 0;
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: 0;
+  right: auto;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-lg {
+  font-size: 1.3333333333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit;
+}
+
+.fa-border {
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
+}
+
+.fa-pull-left {
+  float: left;
+}
+
+.fa-pull-right {
+  float: right;
+}
+
+.fa.fa-pull-left,
+.fas.fa-pull-left,
+.far.fa-pull-left,
+.fal.fa-pull-left,
+.fab.fa-pull-left {
+  margin-right: 0.3em;
+}
+.fa.fa-pull-right,
+.fas.fa-pull-right,
+.far.fa-pull-right,
+.fal.fa-pull-right,
+.fab.fa-pull-right {
+  margin-left: 0.3em;
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical,
+:root .fa-flip-both {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: #fff;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse {
+  color: #fff;
+}</style><link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+<style>
+    #app {
+        height: 100%;
+    }
+
+    #loader-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+    }
+    #loader {
+        display: block;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 150px;
+        height: 150px;
+        margin: -75px 0 0 -75px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #3498db;
+        -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+        animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    }
+
+    #loader:before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #e74c3c;
+        -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+        animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    }
+
+    #loader:after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #f9c922;
+        -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+        animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    }
+
+    @-webkit-keyframes spin {
+        0%   {
+            -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(0deg);  /* IE 9 */
+            transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+        100% {
+            -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(360deg);  /* IE 9 */
+            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+    }
+    @keyframes spin {
+        0%   {
+            -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(0deg);  /* IE 9 */
+            transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+        100% {
+            -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(360deg);  /* IE 9 */
+            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+    }
+</style>
+<link href="/customer/4147dbca5c23fba8fc5d.styles.css" rel="stylesheet"><script src="https://matomo.forte.kz/plugins/HeatmapSessionRecording/configs.php?idsite=31&amp;trackerid=O18hXu&amp;url=https%3A%2F%2Fcustomer-qa.anthill.fortebank.com%2Fcustomer%2Flogin" async="" defer=""></script></head>
+
+<body>
+    <div id="app"><div data-reactroot="" class="auth-bg"><!-- react-text: 2 --><!-- /react-text --><div class="signin-wrapper"><div class="auth-wrapper"><div class="auth-slider"><div class="login-slider" style="height: 100%;"><div class="slick-initialized slick-slider carousel"><div class="slick-list"><div class="slick-track" style="opacity: 1; transform: translate3d(-2880px, 0px, 0px); width: 4800px; transition: -webkit-transform 500ms ease 0s;"><div class="slick-slide slick-active carousel-item" data-index="-1" style="position: relative; width: 960px;"><div class="slider-img" style="background-image: url(&quot;/src/customer/design/img/banners/d30d3aadcf091f4fbf4a34d278fd101d.png&quot;);"><a href="https://business.forte.kz/app?utm_source=header_link&amp;utm_medium=website&amp;utm_campaign=fortebusiness_app" target="_blank" class="slide-link" style="top: 17%; left: 8%;">ПОДРОБНЕЕ</a></div><div class="container slide-caption"><!-- react-text: 14 --><!-- /react-text --></div></div><div class="slick-slide carousel-item" data-index="0" tabindex="-1" style="outline: none; position: relative; width: 960px;"><div class="slider-img" style="background-image: url(&quot;/src/customer/design/img/banners/5f5a16595b4b83fab9ac33588c12d993.png&quot;);"><a href="https://business.forte.kz/zaem_online" target="_blank" class="slide-link" style="top: 29%; left: 4%;">ПОДРОБНЕЕ</a></div><div class="container slide-caption"><!-- react-text: 19 --><!-- /react-text --></div></div><div class="slick-slide carousel-item" data-index="1" tabindex="-1" style="outline: none; position: relative; width: 960px;"><div class="slider-img" style="background-image: url(&quot;/src/customer/design/img/banners/d7ba5d670f95094e12831396e5c11e87.png&quot;);"><a href="https://business.forte.kz/zaem_pos" target="_blank" class="slide-link" style="top: 21%; left: 4%;">ПОДРОБНЕЕ</a></div><div class="container slide-caption"><!-- react-text: 24 --><!-- /react-text --></div></div><div class="slick-slide slick-active carousel-item" data-index="2" tabindex="-1" style="outline: none; position: relative; width: 960px;"><div class="slider-img" style="background-image: url(&quot;/src/customer/design/img/banners/d30d3aadcf091f4fbf4a34d278fd101d.png&quot;);"><a href="https://business.forte.kz/app?utm_source=header_link&amp;utm_medium=website&amp;utm_campaign=fortebusiness_app" target="_blank" class="slide-link" style="top: 17%; left: 8%;">ПОДРОБНЕЕ</a></div><div class="container slide-caption"><!-- react-text: 29 --><!-- /react-text --></div></div><div class="slick-slide carousel-item" data-index="3" style="position: relative; width: 960px;"><div class="slider-img" style="background-image: url(&quot;/src/customer/design/img/banners/5f5a16595b4b83fab9ac33588c12d993.png&quot;);"><a href="https://business.forte.kz/zaem_online" target="_blank" class="slide-link" style="top: 29%; left: 4%;">ПОДРОБНЕЕ</a></div><div class="container slide-caption"><!-- react-text: 34 --><!-- /react-text --></div></div></div></div></div></div></div></div><div class="signin-left"><header class="auth-top-wrapper"><div class="auth-top auth-container"><div class="auth-top-logo"><img src="/customer/7e6d71b75c50eeeb2c9d7e17f8a7047c.svg" style="width: 150px; height: 60px;"></div><div class="header-info"><div><div class="select-phone"><img src="/customer/88770d78e4c8b304a0047e9f6e99ff41.svg" style="margin-right: 5px;"><div>55575</div><div class="arrow-down"></div></div><div style="display: none;"><!-- react-empty: 47 --><!-- react-empty: 48 --></div></div><div><div class="select-lang" id="select-lang"><div><!-- react-text: 52 -->РУС<!-- /react-text --><!-- react-text: 53 --> <!-- /react-text --></div><div class="arrow-down"></div></div><div style="display: none;"><!-- react-empty: 56 --><!-- react-empty: 57 --></div></div></div></div></header><section class="auth-container auth-form-container"><section style="text-align: center; font-size: 16px;"></section><!-- react-text: 131 --><!-- /react-text --><!-- react-text: 77 --><!-- /react-text --><!-- react-text: 78 --><!-- /react-text --><!-- react-text: 79 --><!-- /react-text --><!-- react-text: 80 --><!-- /react-text --><!-- react-text: 81 --><!-- /react-text --><!-- react-text: 82 --><!-- /react-text --><div class="auth-form-block auth-form-padding"><div><div class="factors-processor-content"><div><span class="additional-confirmation">Дополнительное подтверждение</span><div value="MobileOTP"><div style="width: 100%; background: white; white-space: nowrap; display: flex;"><button tabindex="0" type="button" style="border: 10px; box-sizing: border-box; display: inline-block; font-family: Roboto, sans-serif; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); cursor: pointer; text-decoration: none; margin: 0px; padding: 0px; outline: none; font-size: 14px; font-weight: 500; position: relative; color: rgba(255, 255, 255, 0.7); width: 50%; text-transform: uppercase; background: none;"><div><div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 48px; color: rgb(125, 125, 125);"><!-- react-text: 159 -->Digipass<!-- /react-text --></div></div></button><button tabindex="0" type="button" style="border: 10px; box-sizing: border-box; display: inline-block; font-family: Roboto, sans-serif; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); cursor: pointer; text-decoration: none; margin: 0px; padding: 0px; outline: none; font-size: 14px; font-weight: 500; position: relative; color: rgb(255, 255, 255); width: 50%; text-transform: uppercase; background: none;"><div><div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 48px; color: rgb(0, 125, 148);"><!-- react-text: 163 -->Forte Otp<!-- /react-text --></div></div></button></div><div><div style="left: 50%; width: 50%; bottom: 0px; display: block; background: rgb(0, 125, 148); height: 2px; margin-top: -2px; position: relative; transition: left 1s cubic-bezier(0.23, 1, 0.32, 1) 0ms;"></div></div><div><div style="width: 100%; position: relative; text-align: initial; height: 0px; overflow: hidden;"><div class="exchange-block2"><div><!-- react-text: 170 --><!-- /react-text --><label class="auth-form-label">Код с устройства Digipass</label><input type="text" class="auth-form-input" id="log-pass" required="" maxlength="6"><div class="exchange-row-error"></div><div class="otp-footer"><button disabled="" class="btn btn-exchange btn-exchange-hl btn-exchange-wide company-color" id="auth-login">Отправить</button><button class="btn btn-exchange btn-exchange-wide">Синхронизировать</button></div></div></div></div><div style="width: 100%; position: relative; text-align: initial;"><div class="exchange-block2"><div><div style="display: flex; flex-direction: column; align-items: center;"><!-- react-text: 184 --><!-- /react-text --></div><div><label class="auth-form-label">Код</label><input type="text" class="auth-form-input" id="log-pass" required="" maxlength="6"><div class="exchange-row-error"></div><div class="otp-footer" style="display: flex; flex-direction: column; align-items: center;"><button disabled="" class="btn btn-exchange btn-exchange-hl btn-exchange-wide company-color" id="auth-login">Отправить</button><button class="btn btn-exchange btn-exchange-wide">Синхронизировать</button></div></div><a href="https://main.storage-object.pscloud.io/Forte_OTP_Rukovodstvo_polzovatelya_2_01263e776e.pdf" target="_blank" style="color: rgb(0, 125, 148); font-size: 14px; text-decoration: underline; font-weight: 600; margin-top: 16px; display: flex; justify-content: center;">Руководство пользователя "ForteOTP"</a></div></div></div></div></div></div></div><div class="exchange-block-footer otp-footer"><a class="button-gray" id="factor-processor-cancel">Отмена</a></div></div></div><!-- react-text: 151 --><!-- /react-text --></section><div class="fancybox-wrap fancybox-desktop fancybox-type-inline fancybox-opened" style="position: absolute; opacity: 1; overflow: visible; margin-bottom: 5%; top: 120px;"><div class="hidden"><div class="auth-tip-block" id="auth-tip"><div class="auth-tip auth-popup"><a class="close-popup"></a><div class="auth-tip-title">Советы по безопасности</div><div class="auth-tip-content"><p>1) Для входа в Интернет-банк пользуйтесь наиболее популярными поисковиками, такими как Google, используйте заранее созданные закладки или вносите адрес вручную.</p><p>2) Убедитесь, что адрес начинается с HTTPS и рядом с адресом есть замок.</p><p>3) Если вы находитесь не на своем обычном месте, старайтесь не пользоваться незащищенными сетями Wi-Fi (кафе, отели и т.д.).</p><p>4) Не оставляйте свой компьютер без внимания, когда находитесь в системе, и используйте сложный пароль.</p><p>5) Рекомендуем отключить функции запоминания или автоматического заполнения пароля.</p><p>6) Регулярно меняйте пароль, не только по требованию системы. Если вы подозреваете, что кто-то смог разгадать пароль, немедленно замените его.</p><p>7) Не открывайте приложения от незнакомых отправителей и не нажимайте на ссылки в почтовых сообщениях или смс, если не уверены в источнике.</p><p>8) Всегда выходите из системы и закрывайте окно доступа, чтобы посторонние не могли открыть последнюю страницу и скопировать персональную информацию.</p><p>9) Регулярно обновляйте средства защиты своего компьютера (антивирус) и устанавливайте программное обеспечение только из надежных источников.</p><p>10) Никогда не рассекречивайте коды (пароль, digiPIN, ПИН-код, CVV).</p></div><div class="auth-tips-footer"><button class="btn-primary btn-hl" style="margin: 0px auto; padding: 5px 20px;"><!-- react-text: 103 --> <!-- /react-text --><!-- react-text: 104 -->Понятно<!-- /react-text --></button></div></div></div></div></div><footer class="signin-footer"><div class="signin-download"><h5 class="signin-download-title">Установите приложение ForteBusiness</h5><div class="signin-download-app"><div class="signin-btn-download-app"><a href="https://apps.apple.com/kz/app/fortebusiness/id1586252009"><img src="/customer/458806ce77a36fa5d92fc52bd59a425a.svg" alt="appstore-icon" style="margin-right: 5px;"><!-- react-text: 112 -->App Store<!-- /react-text --></a></div><div class="signin-btn-download-app" style="margin-left: 20px;"><a href="https://play.google.com/store/apps/details?id=kz.forte.business"><img src="/customer/bd1c0242aae58c6af9b2b6807d4f07c8.svg" alt="googleplay-icon" style="margin-right: 5px;"><!-- react-text: 116 -->Google Play<!-- /react-text --></a></div></div></div><div class="signin-footer-account"><a class="signin-footer-open-account" href="https://business.forte.kz/serviceonline" target="_blank" rel="noopener noreferrer" id="open-new-account">Нет счета в ForteBank? Открыть счет</a></div><div class="signin-footer-items"><div title="Правила регистрации"><a target="_blank" style="cursor: pointer;">Помощь</a></div><div><a class="fancybox" id="login-tips" style="cursor: pointer;">Советы по безопасности</a></div><div><a target="_blank" rel="noopener noreferrer">forte.kz</a></div></div><div class="signin-info"></div></footer></div></div></div></div>
+
+    <script type="text/javascript" src="/dll/vendor.dll.js"></script>
+
+    <!-- Matomo -->
+    <script type="text/javascript">
+        var _paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+        var u="https://matomo.forte.kz/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '31']);
+        
+        })();
+    </script>
+    <script type="text/javascript" src="//matomo.forte.kz/matomo.js"></script>
+    <!-- End Matomo Code -->
+<script type="text/javascript" src="/customer/4147dbca5c23fba8fc5d.bundle.js"></script>
+
+
+<style>
+      button::-moz-focus-inner,
+      input::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+      }
+    </style></body></html>
